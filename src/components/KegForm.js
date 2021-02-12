@@ -3,9 +3,8 @@ import {v4} from 'uuid';
 import PropTypes from 'prop-types';
 
 function KegForm() {
-  return(
     <React.Fragment>
-      <h1>Form goes here</h1>
+      <h1>Form Goes Here</h1>
     </React.Fragment>
-  )
+  
 }
