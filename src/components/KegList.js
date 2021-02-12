@@ -14,6 +14,7 @@ function KegList(props) {
         price={keg.price}
         abv={keg.abv}
         id={keg.id}
+        key={keg.id}
         pints={keg.pints}
         whenKegClicked = { props.onKegSelection }/>
       )}
