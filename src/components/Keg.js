@@ -14,7 +14,6 @@ function Keg(props) {
       <p>Brand: {props.brand}</p>
       <p>Price: {props.price}</p>
       <p>ABV: {props.abv}</p>
-      <p>Pints Remaining: {props.pints}</p>
       </div>
     </React.Fragment>
   );
