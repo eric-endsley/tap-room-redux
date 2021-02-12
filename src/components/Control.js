@@ -1,5 +1,6 @@
 import React from 'react';
 import KegList from './KegList';
+import AddKegForm from './AddKegForm';
 import { v4 } from 'uuid';
 
 class KegControl extends React.Component {
@@ -7,6 +8,7 @@ class KegControl extends React.Component {
     super(props);
     this.state = {
       formVisibleOnPage:false,
+      selectedKeg: null,
       masterKegList: [
         {
           name: "Normal Beer",
@@ -16,22 +18,38 @@ class KegControl extends React.Component {
           pints: 124,
           id: v4()
         }
-      ],
-      selectedKeg: null
-    }
+      ]
+    };
   }
+
+  handleButtonClick = () {
+    this.setState(prevState => ({
+      formVisibleOnPage: !prevState.formVisibleOnPage
+    }));
+  }
+
+  handleAddingKeg = (newKeg) => {
+    const newMasterKegList = this.state.masterKegList.concat(newKeg);
+    this.setState({
+      masterKegList: newMasterKegList,
+      formVisibleOnPage: false
+    });
+  }
+
   render() {
     let currentlyVisibleState = null;
     if (this.state.formVisibleOnPage) {
-      currentlyVisibleState = <KegForm />
+      currentlyVisibleState = <AddKegForm onNewKegAddition={this.handleAddingKeg} />
+      buttonText = "Return to Keg List";
     } else {
       currentlyVisibleState = <KegList kegList={this.state.masterKegList} />
+      buttonText = "Add New Keg";
     }
-
 
     return( 
       <React.Fragment>
          {currentlyVisibleState}
+         <button onClick={this.handleButtonClick}>{buttonText</button>
       </React.Fragment>
     );
   }
