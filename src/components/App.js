@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header';
-import Control from './Control';
+import KegControl from './Control';
 import Container from 'react-bootstrap/Container';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 
@@ -12,7 +12,7 @@ function App() {
         <Header />
       </Jumbotron>
       <Container>
-        <Control />
+        <KegControl />
       </Container>  
     </React.Fragment>
   );
