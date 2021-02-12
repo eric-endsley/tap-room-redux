@@ -12,8 +12,8 @@ function Keg(props) {
       <div style={kegCardStyles} onClick= {() => props.whenKegCardClicked(props.id)}>  
       <p>Name: {props.name}</p>
       <p>Brand: {props.brand}</p>
-      <p>Price: {props.price}</p>
-      <p>ABV: {props.abv}</p>
+      <p>Price: ${props.price}</p>
+      <p>ABV: {props.abv}%</p>
       </div>
     </React.Fragment>
   );

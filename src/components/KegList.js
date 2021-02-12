@@ -16,7 +16,7 @@ function KegList(props) {
         id={keg.id}
         key={keg.id}
         pints={keg.pints}
-        whenKegClicked = { props.onKegSelection }/>
+        whenKegCardClicked = { props.onKegSelection }/>
       )}
     </React.Fragment>
   );

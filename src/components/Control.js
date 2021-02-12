@@ -1,6 +1,7 @@
 import React from 'react';
 import KegList from './KegList';
 import AddKegForm from './AddKegForm';
+import KegDetail from './KegDetail';
 import { v4 } from 'uuid';
 
 class KegControl extends React.Component {
@@ -45,8 +46,8 @@ class KegControl extends React.Component {
   }
 
   handleChangingSelectedKeg = (id) => {
-    const selectedKeg = this.State.masterKegList.filter(keg => keg.id === id)[0];
-    this.setSetate({selectedKeg: selectedKeg});
+    const selectedKeg = this.state.masterKegList.filter(keg => keg.id === id)[0];
+    this.setState({selectedKeg: selectedKeg});
   }
 
   render() {
