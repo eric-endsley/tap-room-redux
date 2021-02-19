@@ -6,5 +6,7 @@ describe("toggleFormReducer", () => {
     expect(toggleFormReducer(false, {type: null})).toEqual(false)
   });
 
-
+  test('Should return opposite state if toggle form action is passed', () => {
+    expect(toggleFormReducer(false, a.toggleForm())).toEqual(true)
+  });
 });
