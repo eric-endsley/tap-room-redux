@@ -12,7 +12,7 @@ const preLoadStateObj = {
   },
 }
 
-export default (state = {}, action) => {
+export default (state = preLoadStateObj, action) => {
   switch(action.type) {
     default:
       return state;
