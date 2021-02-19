@@ -8,7 +8,6 @@ function Header() {
   return(
     <React.Fragment>
       <div style={headerStyles}>
-          M
           <h1>Taproom Keg Tracker</h1>
       </div>
     </React.Fragment>

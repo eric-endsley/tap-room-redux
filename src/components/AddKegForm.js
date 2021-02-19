@@ -10,8 +10,8 @@ function AddKegForm(props) {
     props.onNewKegAddition({
       name: event.target.name.value,
       brand: event.target.brand.value,
-      price: event.target.price.value,
-      abv: event.target.abv.value,
+      price: parseInt(event.target.price.value),
+      abv: parseInt(event.target.abv.value),
       pints: 124,
       id: v4()
     })
