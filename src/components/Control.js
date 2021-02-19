@@ -91,7 +91,7 @@ class KegControl extends React.Component {
 }
 
 KegControl.propTypes = {
-  formVisibleOnPage: PropTypes.bool;
+  formVisibleOnPage: PropTypes.bool
 };
 
 const mapStateToProps = state => {
