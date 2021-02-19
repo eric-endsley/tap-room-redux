@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# TapRoom Keg Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### A React webpage which allows users to enter & manage information about kegs in a tap room, 2/19/21
 
-## Available Scripts
+#### By Eric Endsley
 
-In the project directory, you can run:
+## Description
+This is a webpage built with React for the 'React Fundamentals' independent project at Epicodus. The webpage allows users to enter information about a Keg for a taproom (name, brand, abv, price) and populate this information to keg cards in a list. These individual cards can be clicked to view detail pages which display the user inputted information as well as the number of pints remaining in the keg. On the details page the user can also click a button to signify that they have poured a pint, which will reduce the number of pints remaining by 1. giut
 
-### `npm start`
+## Project Component Structure
+![structure of React components for Tap Room webpage](./src/img/TapRoomChart.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Setup
+#### Get Node
+This project requires Node.js to run. If you don't have Node installed on your machine already, navigate to the [Node download page](https://nodejs.org/en/download/) and follow their instructions to install.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### Clone and Open The Code Locally
+ 1. Open the [Tap Room website](https://github.com/eric-endsley/tap-room.git) by clicking the link or copy/pasting https://github.com/eric-endsley/tap-roomt.git in the navigator bar of a web browser application.
 
-### `npm test`
+ 2. Click the green Code button in the upper-right part of the window and then EITHER:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ 3. a. Copy the HTTPS URL for the repo and use it in the git clone command in git-bash or another git terminal by inputting: "git clone https://github.com/eric-endsley/tap-room.git"<br>
+ OR b. Click "Download Zip" and unzip the file to an accessible location on your machine.
 
-### `npm run build`
+ 4. Right click on the project directory and open it with VS Code or another code editor. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Finish Setup Using Terminal and Open Webpage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ 1. Run a terminal (e.g. GitBash) in the project directory and enter the terminal command "npm install" which will install all necessary components.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ 2. Enter the commands "npm run build" followed by "npm run start" to initiate a live reloading instance of the webpage locally.
 
-### `npm run eject`
+## Technologies Used
+React, React-Bootstrap, Javascript, JSX, Node, HTML, CSS
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Known Bugs
+None
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contact Information
+To ask questions or report a bug, contact [Eric Endsley](mailto:eric.endsley4@gmail.com)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Legal
+This software is licensed under the MIT license.
