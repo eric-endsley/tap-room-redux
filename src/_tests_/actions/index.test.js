@@ -8,4 +8,25 @@ describe ('taplist actions', () => {
       type: c.TOGGLE_FORM
     });
   });
+
+  it("ADD_KEG should create an ADD_KEG action", () => {
+    const keg = {
+      name: "name",
+      brand: "brand",
+      price: 1,
+      abv: 1,
+      pints: 124,
+      id: 1
+    }
+
+    expect(a.addKeg(keg)).toEqual({
+      type: c.ADD_KEG,
+      name: "name",
+      brand: "brand",
+      price: 1,
+      abv: 1,
+      pints: 124,
+      id: 1
+    });
+  });
 });
