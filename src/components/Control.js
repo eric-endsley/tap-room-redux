@@ -2,13 +2,13 @@ import React from 'react';
 import KegList from './KegList';
 import AddKegForm from './AddKegForm';
 import KegDetail from './KegDetail';
+import { connect } from 'react-redux';
 import { v4 } from 'uuid';
 
 class KegControl extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      formVisibleOnPage:false,
       selectedKeg: null,
       masterKegList: [
         {
@@ -90,4 +90,18 @@ class KegControl extends React.Component {
     );
   }
 }
+
+KegControl.propTypes = {
+  formVisibleOnPage: PropTypes.bool;
+};
+
+const mapStateToProps = state => {
+  return {
+    formVisibleOnPage = state.formVisibleOnPage
+  }
+}
+
+
+KegControl = connect(mapStateToProps)(KegControl);
+
 export default KegControl;
