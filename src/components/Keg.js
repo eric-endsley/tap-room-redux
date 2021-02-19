@@ -5,6 +5,7 @@ function Keg(props) {
   const kegCardStyles = {
     border: 'solid',
     margin: 'auto',
+    marginBottom: '1rem',
     width: '50%'
   }
   return (

@@ -2,6 +2,8 @@ import React from 'react';
 import KegList from './KegList';
 import AddKegForm from './AddKegForm';
 import KegDetail from './KegDetail';
+import PropTypes from 'prop-types';
+import * as a from '../actions/index';
 import { connect } from 'react-redux';
 import { v4 } from 'uuid';
 
@@ -36,6 +38,7 @@ class KegControl extends React.Component {
   }
 
   handleAddingKeg = (newKeg) => {
+    const { dispatch } = this.props;
     const newMasterKegList = this.state.masterKegList.concat(newKeg);
     this.setState({
       masterKegList: newMasterKegList,
@@ -96,7 +99,7 @@ KegControl.propTypes = {
 
 const mapStateToProps = state => {
   return {
-    formVisibleOnPage = state.formVisibleOnPage
+    formVisibleOnPage: state.formVisibleOnPage
   }
 }
 
