@@ -74,10 +74,18 @@ class KegControl extends React.Component {
       buttonText = "Add New Keg";
     }
 
+    const mainButtonStyles = {
+      margin: 'auto',
+      width: '50%',
+      marginTop: '2rem'
+    }
+
     return( 
       <React.Fragment>
          {currentlyVisibleState}
-         <button onClick={this.handleButtonClick}>{buttonText}</button>
+         <div style={mainButtonStyles} onClick={this.handleButtonClick}>
+          <button >{buttonText}</button>
+         </div>
       </React.Fragment>
     );
   }

@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 function Keg(props) {
   const kegCardStyles = {
     border: 'solid',
-    marginRight: '50%',
-    marginBottom: '1rem'
+    margin: 'auto',
+    width: '50%'
   }
   return (
     <React.Fragment>
