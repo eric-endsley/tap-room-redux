@@ -5,7 +5,7 @@
 #### By Eric Endsley
 
 ## Description
-This is a webpage built with React for the 'React Fundamentals' independent project at Epicodus. The webpage allows users to enter information about a Keg for a taproom (name, brand, abv, price) and populate this information to keg cards in a list. These individual cards can be clicked to view detail pages which display the user inputted information as well as the number of pints remaining in the keg. On the details page the user can also click a button to signify that they have poured a pint, which will reduce the number of pints remaining by 1. giut
+This is a webpage built with React for the 'React Fundamentals' independent project at Epicodus. The webpage allows users to enter information about a Keg for a taproom (name, brand, abv, price) and populate this information to keg cards in a list. These individual cards can be clicked to view detail pages which display the user inputted information as well as the number of pints remaining in the keg. On the details page the user can also click a button to signify that they have poured a pint, which will reduce the number of pints remaining by 1.
 
 ## Project Component Structure
 ![structure of React components for Tap Room webpage](./src/img/TapRoomChart.png)
