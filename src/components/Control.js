@@ -5,7 +5,6 @@ import KegDetail from './KegDetail';
 import PropTypes from 'prop-types';
 import * as a from '../actions/index';
 import { connect } from 'react-redux';
-import { v4 } from 'uuid';
 
 class KegControl extends React.Component {
   constructor(props) {
