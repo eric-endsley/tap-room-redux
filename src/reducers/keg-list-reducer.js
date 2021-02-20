@@ -17,7 +17,7 @@ export default (state = preLoadStateObj, action) => {
   switch(action.type) {
     case c.ADD_KEG:
       return Object.assign({}, state, {
-        12 : {
+        [id] : {
           name,
           brand,
           price,
