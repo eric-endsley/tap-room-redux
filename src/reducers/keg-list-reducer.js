@@ -13,7 +13,19 @@ const preLoadStateObj = {
 }
 
 export default (state = preLoadStateObj, action) => {
+  const {name, brand, price, abv, pints, id } = action;
   switch(action.type) {
+    case c.ADD_KEG:
+      return Object.assign({}, state, {
+        12 : {
+          name,
+          brand,
+          price,
+          abv,
+          pints,
+          id
+        }
+      });
     default:
       return state;
   }

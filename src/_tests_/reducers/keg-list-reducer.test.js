@@ -48,6 +48,6 @@ describe('kegListReducer', () => {
       }  
     }
 
-    expect(kegListReducer(undefined, a.addKeg(newKeg).toEqual(changedState) ))
+    expect(kegListReducer(undefined, a.addKeg(newKeg))).toEqual(changedState)
   });
 });
