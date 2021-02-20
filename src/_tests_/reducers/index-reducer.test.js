@@ -36,4 +36,19 @@ describe("rootReducer", () => {
     store.dispatch(action);
     expect(store.getState().formVisibleOnPage).toEqual(toggleFormReducer(undefined, action));
   });
+
+  test('check that ADD_KEG action works for rootReducer', () => {
+   const keg = {
+      name: "AbNormal Beer",
+      brand: "AbNormal Beer Brewing",
+      price: 5,
+      abv: 5.0,
+      pints: 124,
+      id: 2
+    }  
+    const action = a.addKeg(keg)
+    store.dispatch(action);
+  
+    expect(store.getState().masterKegList).toEqual(kegListReducer(undefined, action))
+  });
 });
