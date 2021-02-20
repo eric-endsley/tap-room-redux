@@ -1,6 +1,6 @@
 # TapRoom Keg Tracker Redux Refactor
 
-#### A React webpage which allows users to enter & manage information about kegs in a tap room, with state handled by Redux, 2/19/21
+#### A React page allowing users to manage information about kegs in a taproom, with state handled by Redux, 2/19/21
 
 #### By Eric Endsley
 
@@ -35,7 +35,7 @@ This project requires Node.js to run. If you don't have Node installed on your m
 3. Optionally, you may run the prewritten tests in this repo (or write your own if you'd like) with the terminal command "npm test"
 
 ## Technologies Used
-React, React-Bootstrap, Javascript, JSX, Node, HTML, CSS
+React, React-Bootstrap, Redux, React-Redux, Javascript, JSX, Node, HTML, CSS
 
 ## Known Bugs
 None
