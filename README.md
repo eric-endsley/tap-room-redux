@@ -1,11 +1,13 @@
-# TapRoom Keg Tracker
+# TapRoom Keg Tracker Redux Refactor
 
-#### A React webpage which allows users to enter & manage information about kegs in a tap room, 2/19/21
+#### A React webpage which allows users to enter & manage information about kegs in a tap room, with state handled by Redux, 2/19/21
 
 #### By Eric Endsley
 
 ## Description
-This is a webpage built with React for the 'React Fundamentals' independent project at Epicodus. The webpage allows users to enter information about a Keg for a taproom (name, brand, abv, price) and populate this information to keg cards in a list. These individual cards can be clicked to view detail pages which display the user inputted information as well as the number of pints remaining in the keg. On the details page the user can also click a button to signify that they have poured a pint, which will reduce the number of pints remaining by 1.
+This is a webpage built with React for the 'React with Redux' independent project at Epicodus. The webpage allows users to enter information about a Keg for a taproom (name, brand, abv, price) and populate this information to keg cards in a list. These individual cards can be clicked to view detail pages which display the user inputted information as well as the number of pints remaining in the keg. On the details page the user can also click a button to signify that they have poured a pint, which will reduce the number of pints remaining by 1. 
+
+This project has been configured to handle multiple elements of state with redux. Both the keg list and the "add keg form" toggle states are handled by redux in this application. 
 
 ## Project Component Structure
 ![structure of React components for Tap Room webpage](./src/img/TapRoomChart.png)
@@ -29,6 +31,8 @@ This project requires Node.js to run. If you don't have Node installed on your m
  1. Run a terminal (e.g. GitBash) in the project directory and enter the terminal command "npm install" which will install all necessary components.
 
  2. Enter the commands "npm run build" followed by "npm run start" to initiate a live reloading instance of the webpage locally.
+
+3. Optionally, you may run the prewritten tests in this repo (or write your own if you'd like) with the terminal command "npm test"
 
 ## Technologies Used
 React, React-Bootstrap, Javascript, JSX, Node, HTML, CSS
