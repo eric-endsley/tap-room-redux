@@ -11,16 +11,6 @@ class KegControl extends React.Component {
     super(props);
     this.state = {
       selectedKeg: null,
-      masterKegList: [
-        {
-          name: "Normal Beer",
-          brand: "Normal Beer Brewing",
-          price: 5,
-          abv: 5.0,
-          pints: 124,
-          id: v4()
-        }
-      ]
     };
   }
 
@@ -38,12 +28,10 @@ class KegControl extends React.Component {
 
   handleAddingKeg = (newKeg) => {
     const { dispatch } = this.props;
-    const newMasterKegList = this.state.masterKegList.concat(newKeg);
-    this.setState({
-      masterKegList: newMasterKegList,
-    });
-    const action = a.toggleForm();
+    const action = a.addKeg(addKeg);
     dispatch(action);
+    const action2 = a.toggleForm();
+    dispatch(action2);
   }
 
   handleChangingSelectedKeg = (id) => {
@@ -93,12 +81,14 @@ class KegControl extends React.Component {
 }
 
 KegControl.propTypes = {
-  formVisibleOnPage: PropTypes.bool
+  formVisibleOnPage: PropTypes.bool,
+  masterKegList: PropTypes.object
 };
 
 const mapStateToProps = state => {
   return {
-    formVisibleOnPage: state.formVisibleOnPage
+    formVisibleOnPage: state.formVisibleOnPage,
+    masterKegList: state.masterKegList
   }
 }
 
